@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body class="font-sans ">
+    <main>
+        <section class="h-screen relative flex">
+
+                <div class="bg-gray-800 border bg-opacity-5 px-6 py-28 fixed h-screen flex flex-col items-start space-y-4 w-72">
+                    <h1 class="font-bold text-slate-400 tracking-wide">Photos</h1>
+                    <div class=" bg-gray-300 w-full" style="height: 1px;"></div>
+                    <button class="tablink hover:bg-slate-300/50 w-full py-1 px-2 rounded-md text-left" onclick="openPage('London', this)" id="defaultOpen">London</button>
+                    <button class="tablink hover:bg-slate-300/50 w-full py-1 px-2 rounded-md text-left" onclick="openPage('Madrid', this)" >Madrid</button>
+                    <button class="tablink hover:bg-slate-300/50 w-full py-1 px-2 rounded-md text-left " onclick="openPage('Glasgow', this )">Glasgow</button>
+                    <button class="tablink hover:bg-slate-300/50 w-full py-1 px-2 rounded-md text-left" onclick="openPage('Amsterdam', this)">Amsterdam</button>
+                    <button class="tablink hover:bg-slate-300/50 w-full py-1 px-2 rounded-md text-left" onclick="openPage('Algiers', this)">Algiers</button>
+                    <button class="tablink hover:bg-slate-300/50 w-full py-1 px-2 rounded-md text-left" onclick="openPage('Barcelona', this)">Barcelona</button>
+                </div>
+            
+            <div>
+                <div class="flex items-center justify-center ml-72 px-4 py-8">
+                    <div id="London" class="tabcontent">
+
+                      <h1 class="text-5xl font-semibold tracking-wider mb-8">London</h1>
+
+                        <div class="grid  grid-cols-4 grid-rows-4 gap-4">
+                            <div class="relative overflow-hidden rounded-md flex items-center">
+                                <img src="images/London/IMG_1741.JPG" alt="" class="parallax-image rounded-xl row-span-2 -top-3" data-speed="0.1">
+                            </div>
+                            
+                            <img src="images/London/IMG_1742.jpg" alt="" class="rounded-xl">
+                            <img src="images/London/IMG_1603.jpg" alt="" class="rounded-xl">
+                            <img src="images/London/IMG_1677.jpg" alt="" class="rounded-xl">
+                            <img src="images/London/IMG_1689.jpg" alt="" class="rounded-xl">
+                            <img src="images/London/IMG_1707.jpg" alt="" class="rounded-xl">
+                        </div>
+                    </div>
+                
+                    <div id="Madrid" class="tabcontent">
+                      <h1 class="text-5xl font-semibold tracking-wider ">Madrid</h1>
+                    </div>
+                
+                    <div id="Glasgow" class="tabcontent">
+                      <h1 class="text-5xl font-semibold tracking-wider ">Glasgow</h1>
+                    </div>
+                
+                    <div id="Amsterdam" class="tabcontent">
+                      <h1 class="text-5xl font-semibold tracking-wider ">Amsterdam</h1>
+                    </div>
+                    <div id="Algiers" class="tabcontent">
+                        <h1 class="text-5xl font-semibold tracking-wider ">Algiers</h1>
+                    </div>
+                    <div id="Barcelona" class="tabcontent">
+                        <h1 class="text-5xl font-semibold tracking-wider ">Barcelona</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
